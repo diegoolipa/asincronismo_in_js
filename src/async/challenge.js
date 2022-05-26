@@ -13,7 +13,8 @@ const fetchData = (url_api) => {
         xhttp.onreadystatechange = (() => {
             // comparamos el 4 porque eso indica que se completo la peticion
             if(xhttp.readyState === 4){
-                // verificamos que el status este en 200, 200 es que es correcto
+                // verificamos que el status este en 200, 200 es
+                // que es correcto
                 xhttp.status === 200
                     // si esta en 200
                     ? resolve(JSON.parse(xhttp.responseText))
